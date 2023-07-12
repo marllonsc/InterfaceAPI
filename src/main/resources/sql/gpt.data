@@ -1,0 +1,18 @@
+give me a sql database to mysql called microservices_db where we have a person table for this class "@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+	private Integer id;
+	
+	@Column(nullable = false)
+	private String name;
+	
+	@Column(nullable = false)
+	private String document;
+	
+	@Column(nullable = false)
+	private String email;"
+
+    each person we have a user, each user will have login, password, atual token, atual key token, set of roles table
+	and a set of permission table. 
+    Table roles has name and a set of permission.
+    Permission has id, name and service table.
+    Service table has name of service has id, serviceName, action, date with time.  
